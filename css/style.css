@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.target {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.box-target {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box-target h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+.target .box-target a,
+.target .boxes-target a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #567aa0;
+    padding: 7px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.boxes-target a:hover {
+    background-color: #0056b3;
+}
+
+.boxes-target table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.boxes-target table, th, td {
+    border: 1px solid #ddd;
+
+}
+
+.boxes-target th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.boxes-target th {
+    background-color: #007BFF;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e0d7d7;
+}
+
+tbody tr:hover {
+    background-color: #f1f1f1;
+}
+.container-tambah-target {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: auto;
+}
+.container-tambah-target form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-tambah-target form input[type="date"],
+.container-tambah-target form input[type="text"],
+.container-tambah-target form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.container-tambah-target form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container-tambah-target form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.container-tambah-target form a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    text-align: center;
+}
+
+.container-tambah-target form a:hover {
+    text-decoration: underline;
+}
+
+.container-tambah-target textarea {
+    resize: none;
+    height: 100px;
+}
+
+.container-tambah-target h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.container-edit-target {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: auto;
+}
+
+.container-edit-target form {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-edit-target form input[type="date"],
+.container-edit-target form input[type="text"],
+.container-edit-target form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.container-edit-target form input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.container-edit-target form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.container-edit-target form a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+    text-align: center;
+}
+
+.container-edit-target form a:hover {
+    text-decoration: underline;
+}
+
+.container-edit-target textarea {
+    resize: none;
+    height: 100px;
+}
+
+.container-edit-target h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+.container-edit-target select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.container-edit-target select:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.container-edit-target option {
+    padding: 10px;
+    font-size: 16px;
+}
