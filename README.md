@@ -1,4 +1,4 @@
-# Pencatatan Target
+# Pencatatan Target Masa Depan
 
 Proyek ini adalah aplikasi sederhana untuk mencatat target harian yang ingin dicapai oleh pengguna. Aplikasi ini dibangun menggunakan PHP dan berfungsi untuk memasukkan, menyimpan, mengedit, serta menampilkan target-target yang telah ditetapkan oleh pengguna.
 
