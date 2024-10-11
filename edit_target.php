@@ -50,7 +50,7 @@ if (isset($_POST['future']) && $_POST['future'] != '') {
         <h1>Form Edit Target</h1>
         <form action="edit_target.php?id=<?php echo ambil_data_target()['id']; ?>" method="POST">
             <input type="date" name="tanggal" value="<?php echo ambil_data_target()['tanggal']; ?>" required>
-            <input type="text" name="future" value="<?php echo ambil_data_target()['future']; ?>" required>
+            <input type="text" name="future" value="<?php echo ambil_data_target()['future']; ?>" readonly>
             <select name="sudah_belum">
                 <option>Belum Tercapai</option>
                 <option>Sudah Tercapai</option>
