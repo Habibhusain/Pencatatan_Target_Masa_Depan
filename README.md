@@ -4,11 +4,11 @@ Proyek ini adalah aplikasi sederhana untuk mencatat target harian yang ingin dic
 
 ## Fitur
 
-![Tambah Murojaah](./css/screenshot/tambah.png)
+![Tambah Murojaah](./screenshot/tambah.png)
 - **Menambah Target**: Pengguna dapat menambahkan target harian baru melalui halaman utama atau halaman khusus penambahan target.
-![Tampilan Murojaah](./css/screenshot/tampilan.png)
+![Tampilan Murojaah](./screenshot/tampilan.png)
 - **Melihat Daftar Target**: Semua target yang sudah ditambahkan dapat dilihat di halaman utama.
-![Edit Murojaah](./css/screenshot/edit.png)
+![Edit Murojaah](./screenshot/edit.png)
 - **Mengedit Target**: Pengguna dapat mengedit target yang telah ditambahkan melalui halaman khusus pengeditan.
 - **Menghapus Target**: Pengguna dapat menghapus target yang sudah tidak relevan.
 
