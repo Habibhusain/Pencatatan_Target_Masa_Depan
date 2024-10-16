@@ -1,6 +1,7 @@
 <?php
 
 require "db.php";
+require "function.php";
 
 if(isset($_POST['future']) && $_POST['future'] !=''){
 
@@ -8,13 +9,13 @@ if(isset($_POST['future']) && $_POST['future'] !=''){
     $target = $_POST['future'];
     $sudah_belum = $_POST ['sudah_belum'];
     $ket = $_POST ['keterangan'];
-    $tambah_data_target = "INSERT INTO target_future (tanggal, future,sudah_belum, keterangan) VALUES ('$tanggal','$target','$sudah_belum','$ket')";
-    $tambah_target = $db->query($tambah_data_target);
-    if($tambah_target)
+   
+    $tambah = tambah_target($tanggal,$target,$sudah_belum,$ket);
+    if($tambah)
     {
         echo "<script>
                alert=('Data Berhasil Di Tambah');
-               window.location='target.php'; 
+               window.location='index.php'; 
               </script>";
     }else{
         echo "<script>
@@ -48,7 +49,7 @@ if(isset($_POST['future']) && $_POST['future'] !=''){
             <input type="text" name="sudah_belum" value="Belum Tercapai" hidden>
             <textarea name="keterangan" hidden>Jangan lupa Isi ini jika sudah melewati tanggal</textarea>
             <input type="submit" name="submit">
-            <a href="target.php">Kembali ke Beranda</a>
+            <a href="index.php">Kembali ke Beranda</a>
         </form>
         </div>
 </body>

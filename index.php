@@ -1,6 +1,7 @@
 <?php
 
 require "db.php";
+require "function.php";
 
 ?>
 
@@ -30,12 +31,10 @@ require "db.php";
                     <th colspan=2>Action</th>
                 </tr>
             </thead>
-            <?php
-                $tampil_data_target = "SELECT * FROM target_future ORDER BY id DESC";
-                $tampil_target = $db->query($tampil_data_target);
-                $no=1;
-                while($row = $tampil_target->fetchArray()):
-            
+            <?php 
+            $tampil_target = tampil_target();
+            $no = 1;
+            foreach ($tampil_target as $row):
             ?>
             <tr>
                 <td><?php echo $no; ?></td>
@@ -48,7 +47,7 @@ require "db.php";
             </tr>
             <?php
                 $no++;
-                endwhile;
+                endforeach;
             ?>
         </table>
         </div>

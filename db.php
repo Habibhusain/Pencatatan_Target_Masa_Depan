@@ -1,6 +1,6 @@
 <?php
 
-$db = new SQLite3('target.sqlite');
+$db = new SQLite3('db_target.sqlite');
 if(!$db)
 {
     echo $db->lasterrorMsg();
