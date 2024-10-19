@@ -1,7 +1,7 @@
 <?php
 
 require "db.php";
-require "function.php";
+require "functions.php";
 
 if(isset($_POST['future']) && $_POST['future'] !=''){
 

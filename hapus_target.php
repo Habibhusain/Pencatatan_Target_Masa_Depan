@@ -1,7 +1,7 @@
 <?php
 
 require "db.php";
-require "function.php";
+require "functions.php";
 
 $ambil_id = $_GET['id'];
 
