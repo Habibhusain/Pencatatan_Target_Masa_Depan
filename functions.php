@@ -1,28 +1,27 @@
 <?php
 
-function database()
-{
-            $db = new SQLite3('db_target.sqlite');
-        if(!$db)
-        {
-            echo $db->lasterrorMsg();
-            exit();
-        }else{
-            // echo 'database berhasil';
-        }
+function database() {
+    $db = new SQLite3('db_target.sqlite');
+    if (!$db) {
+        echo $db->lasterrorMsg();
+        exit();
+    } else {
+        // echo 'database berhasil';
+    }
 
-        return $db;
+    return $db;
 }
 
 function table()
 {
-    $db= database();
-    $table= $db->query("CREATE TABLE IF NOT EXISTS target_future (id INTEGER PRIMARY KEY, tanggal TEXT NOT NULL, future TEXT NOT NULL,sudah_belum TEXT NOT NULL, keterangan TEXT NOT NULL)");
+    $db = database();
+    $table = $db->query("CREATE TABLE IF NOT EXISTS target_future (id INTEGER PRIMARY KEY, tanggal TEXT NOT NULL, future TEXT NOT NULL,sudah_belum TEXT NOT NULL, keterangan TEXT NOT NULL)");
 
     return $table;
 }
 
 function tampil_target() {
+
     $db = database();
 
     $tampil_target = "SELECT * FROM target_future ORDER BY tanggal DESC";
@@ -36,8 +35,7 @@ function tampil_target() {
     return $tampil;
 }
 
-function ambil_data_target($ambil_id) 
-{
+function ambil_data_target($ambil_id) {
 
     $db = database();
 
@@ -48,8 +46,8 @@ function ambil_data_target($ambil_id)
     return $ambil;
 }
 
-function tambah_target($tanggal,$target,$sudah_belum,$ket)
-{
+function tambah_target($tanggal,$target,$sudah_belum,$ket) {
+
     $db = database();
 
     $tambah_data_target = "INSERT INTO target_future (tanggal, future,sudah_belum, keterangan) VALUES ('$tanggal','$target','$sudah_belum','$ket')";

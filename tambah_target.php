@@ -1,9 +1,8 @@
 <?php
-
 require "db.php";
 require "functions.php";
 
-if(isset($_POST['future']) && $_POST['future'] !=''){
+if (isset($_POST['future']) && $_POST['future'] !='') {
 
     $tanggal = $_POST['tanggal'];
     $target = $_POST['future'];
@@ -11,23 +10,19 @@ if(isset($_POST['future']) && $_POST['future'] !=''){
     $ket = $_POST ['keterangan'];
    
     $tambah = tambah_target($tanggal,$target,$sudah_belum,$ket);
-    if($tambah)
-    {
+    
+    if ($tambah) {
         echo "<script>
                alert=('Data Berhasil Di Tambah');
                window.location='index.php'; 
               </script>";
-    }else{
+    } else {
         echo "<script>
                alert=('Data Gagal Di Tambah');
                window.location='tambah_target.php'; 
               </script>";
     }
-
 }
-
-
-
 ?>
 
 <!DOCTYPE html>
